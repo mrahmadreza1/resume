@@ -1,0 +1,122 @@
+\documentclass[11pt,a4paper]{article}
+
+% ===== Packages =====
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+
+% ===== Colors =====
+\definecolor{primary}{RGB}{59, 130, 246}
+\definecolor{darktext}{RGB}{30, 41, 59}
+\definecolor{mutedtext}{RGB}{100, 116, 139}
+
+% ===== Hyperlinks =====
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    pdftitle={Ahmadreza Moneti - Resume},
+    pdfauthor={Ahmadreza Moneti}
+}
+
+% ===== Section styling =====
+\titleformat{\section}
+  {\Large\bfseries\color{primary}}
+  {}{0em}{}[\vspace{-0.3em}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{1em}{0.5em}
+
+% ===== No page numbers =====
+\pagestyle{empty}
+
+% ===== Custom commands =====
+\newcommand{\cventry}[4]{%
+    \noindent\textbf{#1} \hfill \textit{\color{mutedtext}#2}\\
+    \textit{#3} \hfill \textit{\color{mutedtext}#4}\\
+    \vspace{0.2em}
+}
+
+\begin{document}
+
+% ===== Header =====
+\begin{center}
+    {\Huge\bfseries\color{darktext} Ahmadreza Moneti}\\[0.4em]
+    {\large\color{primary}\textbf{AI Engineer | AI Agents \& LLM Systems}}\\[0.6em]
+    \small
+    \faEnvelope\ \href{mailto:ahmadrezamenati@gmail.com}{ahmadrezamenati@gmail.com} \quad
+    \faPhone\ +98 903 477 7128 \quad
+    \faGithub\ \href{https://github.com/mrahmadreza1}{github.com/mrahmadreza1} \quad
+    \faTelegram\ \href{https://t.me/Ahmadrezamenati}{@Ahmadrezamenati}
+\end{center}
+
+\vspace{0.5em}
+
+% ===== Summary =====
+\section*{Professional Summary}
+AI Engineer specializing in \textbf{autonomous AI agents} and \textbf{LLM-powered systems}. Experienced in designing production-grade architectures that bridge cutting-edge research with reliable, scalable products. Skilled across deep learning, backend engineering, and MLOps — enabling end-to-end ownership of AI projects.
+
+% ===== Skills =====
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{AI Agents \& Autonomous Systems:} Multi-Agent Orchestration, Tool Use, LangGraph, AutoGen, ReAct, Planning
+    \item \textbf{LLM Engineering:} RAG, Fine-tuning, Prompt Engineering, Embeddings, Vector Databases, Evaluations
+    \item \textbf{Machine Learning \& Deep Learning:} PyTorch, Transformers, TensorFlow, scikit-learn, NLP, Computer Vision
+    \item \textbf{Backend \& Infrastructure:} Python, FastAPI, Docker, PostgreSQL, Redis, GitHub Actions, Kubernetes
+\end{itemize}
+
+% ===== Experience =====
+\section*{Professional Experience}
+
+\cventry{AI Engineer — AI Agents \& LLM Systems}{2024 — Present}{Tech Company}{Remote}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Designed and deployed autonomous multi-agent systems for research and automation workflows
+    \item Built production RAG pipelines with hybrid search, reranking, and citation grounding
+    \item Led architecture decisions for LLM evaluation, observability, and deployment
+    \item Improved research cycle efficiency by 40\% through agent orchestration
+\end{itemize}
+
+\vspace{0.6em}
+
+\cventry{Machine Learning Engineer}{2022 — 2024}{Previous Company}{Tehran, Iran}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Built and shipped ML models for NLP and recommendation systems
+    \item Owned full lifecycle: data pipelines, training, evaluation, and production deployment
+    \item Processed 3M+ documents daily with sub-100ms inference latency
+\end{itemize}
+
+% ===== Education =====
+\section*{Education}
+\cventry{B.Sc. in Computer Engineering}{2018 — 2022}{University}{Tehran, Iran}
+Focus: Artificial Intelligence, Machine Learning, and Software Engineering.\\
+Thesis on deep learning applications.
+
+% ===== Projects =====
+\section*{Featured Projects}
+
+\textbf{Multi-Agent Research Assistant} \hfill \textit{\color{mutedtext}2024}\\
+Autonomous system of specialized agents that collaborate to research, fact-check, and synthesize reports from web and private knowledge bases. \textit{(LangGraph, GPT-4, FastAPI, Pinecone)}
+
+\vspace{0.4em}
+
+\textbf{Enterprise RAG Platform} \hfill \textit{\color{mutedtext}2024}\\
+Production-grade RAG system with hybrid search, reranking, and citation-grounded answers over large document corpora. Achieved 92\% answer accuracy. \textit{(LlamaIndex, Qdrant, OpenAI)}
+
+\vspace{0.4em}
+
+\textbf{Real-Time NLP Pipeline} \hfill \textit{\color{mutedtext}2023}\\
+End-to-end streaming pipeline for text classification and entity extraction. \textit{(PyTorch, Kafka, Redis, Kubernetes)}
+
+% ===== Certifications =====
+\section*{Certifications}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item Deep Learning Specialization — DeepLearning.AI
+    \item Machine Learning Engineering — MLOps Specialization
+    \item LLM Engineering — Advanced Prompt \& Agents
+\end{itemize}
+
+\end{document}
